@@ -46,10 +46,10 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-const markup = images                          // змінна рядок-розмітка, яку вставим у список ul
-  .map(({url, alt}) => {                       //деструктуризація властивостей обєкта img
-    return `<li class = "gallery-item"><img src = "${url}" alt = "${alt}" class= gallery-img></li>`;
+const markup = images                  // змінна рядок-розмітка, яку вставим у список ul
+  .map(({ url, alt }) => {            //деструктуризація властивостей обєкта img
+    return `<li class = "gallery-item"><img src = "${url}" alt = "${alt}" class="gallery-img"></li>`;
   })
-  .join(" ");  //з масива витягуєм рядок 
+  .join("");           //з масива витягуєм рядок
 
-gallery.insertAdjacentHTML('beforeend', markup); //вставляєм рядок-розмітку в ul після ul
+gallery.insertAdjacentHTML('beforeend', markup);  //вставляєм рядок-розмітку в ul після ul

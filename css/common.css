@@ -12,15 +12,78 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+ul,
+ol {
+  list-style-type: none;
+}
 
-/* task1 */
+----------------------------------------------/* task1 */
+.categories {
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  height: 888px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+}
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  /* height: 264px; */
+  background: #f6f6fe;
+}
+.item.item-midle {
+  height: 216px;
+}
+.item.item-last{
+  height: 312px;
+}
+.title-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: block;
+  padding: 0 0 0 16px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.list-second {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 0;
 
-/* task2 */
+  width: 360px;
+  height: 184px;
+}
+.item-second {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px 8px;
+}
+
+----------------------------------------------/* task2 */
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  /* flex-direction: column; */
   gap: 48px 24px;
-  list-style: none;
   padding: 0;
   margin: 100px 156px;
   justify-content: center;
@@ -29,8 +92,7 @@ body {
 }
 
 .gallery-item {
-  width: calc((100% - 24px * 2 ) / 3);
-  box-sizing: border-box;
+  width: calc((100% - 24px * 2) / 3);
 }
 
 .gallery-img {
@@ -38,9 +100,9 @@ body {
   width: 100%;
   height: auto;
 }
+--------------------------------------------/* task3 */
 
-/* task3 */
 
-/* task4 */
+--------------------------------------------/* task4 */
 
-/* task5 */
+--------------------------------------------/* task5 */

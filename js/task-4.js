@@ -22,4 +22,28 @@
 // очищені від пробілів по краях
 // Після сабміту елементи форми очищаються
 
+const form = document.querySelector('.login-form'); 
+
+form.addEventListener('submit', event => {
+  event.preventDefault();                      // Сторінка не перезавантажується
+
+  const { email, password } = form.elements;   //доступ до інпутів через власт elements
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
+
+  if (emailValue === '' || passwordValue === '') { //якщо інпути пусті попередження алерт
+    alert('All form fields must be filled in');
+    return;   //зупинити ф-цію
+  }
+
+  const formData = {                       //створ обєкт з даними полів форми
+    email: emailValue,
+    password: passwordValue,
+  };
+    console.log(formData);                 //подивитись обєкт
+    
+  form.reset();                            // Очищення форми
+});
+
+
 

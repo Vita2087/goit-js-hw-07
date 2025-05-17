@@ -26,3 +26,12 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+const button = document.querySelector('.change-color');
+const span = document.querySelector('.color');
+
+button.addEventListener('click', () => {
+  const newColor = getRandomHexColor();           //створ новий рандомний колір
+  document.body.style.backgroundColor = newColor; //змінюєм колір фону сторінки <body> через інлайн-стиль
+  span.textContent = newColor;                    //вставляєм назву кольора в спан
+});
