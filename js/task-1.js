@@ -10,12 +10,13 @@
 
 const categoriesList = document.querySelectorAll('#categories .item');    // зн всі li з класом "item" у #categories
 const howmuchli = categoriesList.length;
+  console.log(`Number of categories : ${ howmuchli}`);     //вив ск в ul#categories є li з класом "item"
 
 categoriesList.forEach(item => {                           //прохід по всіх li з класом "item" у #categories
   const title = item.querySelector('h2').textContent;      //зн ел.h2 і його текст
   const itemsCount = item.querySelectorAll('ul li').length; //зн всі li в ul і порахувати
 
-  console.log(`Number of categories : ${ howmuchli}`);     //вив ск в ul#categories є li з класом "item"
+
   console.log(`Category: ${title}`);                       //вив текст ел h2
   console.log(`Elements: ${itemsCount}`);                  //вив ск.li в ul
 });

@@ -1,3 +1,4 @@
+/* https://www.figma.com/design/ikD0S2P6gN6MKQUXfA11RG/HW-JavaScript--Copy-?node-id=0-1&p=f&t=EIYUhcPP2PlOdAes-0 */
 * {
   box-sizing: border-box;
 }
@@ -79,29 +80,35 @@ ol {
 }
 
 ----------------------------------------------/* task2 */
+
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  gap: 48px 24px;
-  padding: 0;
-  margin: 100px 156px;
-  justify-content: center;
   width: 1128px;
   height: 300px;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
+  padding: 100px 156px;
+}
+
 .gallery-item {
-  width: calc((100% - 24px * 2) / 3);
+  width: calc((100% - 48px * 2) / 3);
+  /* aspect-ratio: 1 / 1; */
+  /* overflow: hidden; */
 }
 
 .gallery-img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
---------------------------------------------/* task3 */
 
+
+--------------------------------------------/* task3 */
 
 --------------------------------------------/* task4 */
 
